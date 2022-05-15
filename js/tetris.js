@@ -25,8 +25,7 @@ var colors = [
     'cyan', 'orange', 'blue', 'yellow', 'red', 'green', 'deeppink'
 ];
 
-// creates a new 4x4 shape in global variable 'current'
-// 4x4 so as to cover the size when the shape is rotated
+
 function newShape() {
     var id = Math.floor( Math.random() * shapes.length );
     var shape = shapes[ id ]; // maintain id for color filling
@@ -62,7 +61,6 @@ function init() {
     }
 }
 
-// keep the element moving down, creating new shapes and clearing lines
 function tick() {
     if ( valid( 0, 1 ) ) {
         ++currentY;
@@ -80,7 +78,6 @@ function tick() {
     }
 }
 
-// stop shape at its position and fix it to board
 function freeze() {
     for ( var y = 0; y < 4; ++y ) {
         for ( var x = 0; x < 4; ++x ) {
@@ -92,7 +89,6 @@ function freeze() {
     freezed = true;
 }
 
-// returns rotates the rotated shape 'current' perpendicularly anticlockwise
 function rotate( current ) {
     var newCurrent = [];
     for ( var y = 0; y < 4; ++y ) {
@@ -105,7 +101,6 @@ function rotate( current ) {
     return newCurrent;
 }
 
-// check if any lines are filled and clear them
 function clearLines() {
     for ( var y = ROWS - 1; y >= 0; --y ) {
         var rowFilled = true;
@@ -159,7 +154,7 @@ function keyPress( key ) {
     }
 }
 
-// checks if the resulting position of current shape will be feasible
+
 function valid( offsetX, offsetY, newCurrent ) {
     offsetX = offsetX || 0;
     offsetY = offsetY || 0;
