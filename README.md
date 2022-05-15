@@ -1,6 +1,5 @@
 ## Champion Tetris Game 
-#### [Click Here](https://github.com/shenu01/js-tetris-game-) to play this game through web browser.
-
+#### [Click Here](https://shenu01.github.io/js-tetris-game-/) to play enjoy this game through web browser.
 ## Screenshot
 ![Image of MyProfile](assets/images/Screenshot.png)
 
@@ -11,4 +10,4 @@
 * jQuery
 * Bootstrap
 
-**Developed By _Ravidu Lakshitha_**
+**Developed By _A.Ravidu Lakshitha_**
